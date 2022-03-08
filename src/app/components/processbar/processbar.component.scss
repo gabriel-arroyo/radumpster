@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
+.container{
+  height:500px;
+  background-color:#1d213e;
+  margin-top:2em;
+}
+.title{
+  color:white;
+  font-size:3vw;
+  font-family:"Raleway";
+  font-weight:800;
+  text-align:center;
+  padding:6vw;
+}
+
+.steps{
+  display:flex;
+  flex-direction:row;
+  color:white;
+  font-family:"Raleway";
+}

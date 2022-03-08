@@ -6,6 +6,8 @@ import { WarningbarComponent } from './warningbar/warningbar.component';
 import { ProcessbarComponent } from './processbar/processbar.component';
 import { DumpstersbarComponent } from './dumpstersbar/dumpstersbar.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProcessComponent } from './process/process.component';
+import { DumpsterComponent } from './dumpster/dumpster.component';
 
 
 
@@ -17,6 +19,8 @@ import { ContactComponent } from './contact/contact.component';
     ProcessbarComponent,
     DumpstersbarComponent,
     ContactComponent,
+    ProcessComponent,
+    DumpsterComponent,
   ],
   imports: [
     CommonModule
@@ -27,6 +31,8 @@ import { ContactComponent } from './contact/contact.component';
     WarningbarComponent,
     ProcessbarComponent,
     DumpstersbarComponent,
+    ProcessComponent,
+    DumpsterComponent,
   ],
 })
 export class ComponentsModule { }
