@@ -1,0 +1,11 @@
+<div class="bar hidden">
+  <div class="container">
+    <label for="location">Location: <input type="text" id="location"></label>
+    <label for="date">Date: <input type="date" id="date" name="date"></label>
+    <label for="dumpster">Dumpster type:
+      <select>
+        <option *ngFor="let dumpster of dumpsters">{{dumpster.title}}</option>
+      </select></label>
+      <button>Go</button>
+  </div>
+</div>

@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
 import { DumpsterComponent } from './dumpster/dumpster.component';
 import {RouterModule} from '@angular/router';
+import { QuotebarComponent } from './quotebar/quotebar.component';
 
 
 @NgModule({
@@ -18,9 +19,10 @@ import {RouterModule} from '@angular/router';
     WarningbarComponent,
     ProcessbarComponent,
     DumpstersbarComponent,
-    ContactComponent,
     ProcessComponent,
     DumpsterComponent,
+    ContactComponent,
+    QuotebarComponent,
   ],
   imports: [
     CommonModule,
@@ -35,6 +37,7 @@ import {RouterModule} from '@angular/router';
     ProcessComponent,
     DumpsterComponent,
     ContactComponent,
+    QuotebarComponent,
   ],
 })
 export class ComponentsModule { }
