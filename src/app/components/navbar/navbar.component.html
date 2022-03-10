@@ -1,15 +1,25 @@
 <nav class="nav">
   <img src="{{ logo }}" alt="logo" />
   <ul class="nav__list">
-    <li class="nav__item" [class.active]="selected === 0" (click)="select(0)">
+    <li
+    *ngFor="let item of navitems, let i = index"
+    class="nav__item"
+    [class.active]="selected===i"
+    (click)="select(i)"
+    >
+        <a *ngIf="item.link.charAt(0)==='#'" [href]="item.link">{{item.title}}</a>
+        <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]">{{item.title}}</a>
+
+    </li>
+    <!-- <li class="nav__item" [class.active]="selected === 0" (click)="select(0)">
       <a [href]="'#'+link">Home</a>
     </li>
     <li class="nav__item" [class.active]="selected === 1" (click)="select(1)">
-      Why Us
+      <a [href]="'#'+link">Why Us</a>
     </li>
     <li class="nav__item" [class.active]="selected === 2" (click)="select(2)">
-      Our Dumpsters
-    </li>
+      <a [href]="'#'+link">Our Dumpsters</a>
+    </li> -->
   </ul>
 </nav>
 

@@ -1,22 +1,22 @@
 
 .container{
-  height:500px;
-  background-color:#1d213e;
   margin-top:2em;
+  margin-bottom:5em;
+  padding:2em;
+padding-bottom:2em;
+padding-top:.1em;
 }
 .title{
-  color:white;
+  color:#1d213e;
   font-size:3vw;
   font-family:"Raleway";
   font-weight:800;
   text-align:center;
-  padding:6vw;
+  padding:3vw;
 }
-
 
 .dumpsters{
   display:flex;
   flex-direction:row;
-  color:white;
-  font-family:"Raleway";
 }
+

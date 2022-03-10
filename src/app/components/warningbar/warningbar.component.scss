@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
 .container{
   display:flex;
   flex-direction:row;
@@ -13,6 +12,11 @@
 }
 .btn-contact{
   height:5vw;
+  cursor:pointer;
+  transition:transform .25s ease;
+}
+.btn-contact:hover{
+  transform: scale(1.2);
 }
 .text{
   font-family:"Raleway";

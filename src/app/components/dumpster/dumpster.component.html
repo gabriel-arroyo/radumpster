@@ -1,3 +1,11 @@
-<div class="container">
-  <img src="../../../assets/images/dumpster5.png" alt="dumpster"/>
+<div class="whole">
+  <div class="container">
+    <img class="image" src="{{dumpster.imageSrc}}" alt="dumpster"/>
+    <div class="title">5 Yard Dumpster</div>
+    <div class="subtitle">Dimensions</div>
+    <div *ngFor="let dimension of dumpster.dimensionsArray" class="data">{{dimension}}</div>
+    <div class="subtitle">Best for</div>
+    <div *ngFor="let bestFor of dumpster.bestForArray" class="data">{{bestFor}}</div>
+  </div>
+  <img class="button" src="{{dumpster.buttonSrc}}" alt="quote"/>
 </div>

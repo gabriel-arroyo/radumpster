@@ -8,7 +8,7 @@ import { DumpstersbarComponent } from './dumpstersbar/dumpstersbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
 import { DumpsterComponent } from './dumpster/dumpster.component';
-
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import { DumpsterComponent } from './dumpster/dumpster.component';
     DumpsterComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     CoverComponent,
@@ -33,6 +34,7 @@ import { DumpsterComponent } from './dumpster/dumpster.component';
     DumpstersbarComponent,
     ProcessComponent,
     DumpsterComponent,
+    ContactComponent,
   ],
 })
 export class ComponentsModule { }

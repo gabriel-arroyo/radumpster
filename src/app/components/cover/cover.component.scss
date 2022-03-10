@@ -29,10 +29,20 @@ justify-content: center;
   padding-left:7vw;
   padding-top:1vw;
 }
-.quote{
+.button{
   width:7vw;
   margin-left:20%;
   margin-top:1.3vw;
    -webkit-filter: drop-shadow(15px 15px 15px #222);
   filter: drop-shadow(15px 15px 15px #222);
+  cursor:pointer;
+  animation: center-animate 1s ease infinite alternate;
+}
+@keyframes center-animate {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

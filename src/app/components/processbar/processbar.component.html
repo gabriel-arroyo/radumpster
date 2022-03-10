@@ -3,8 +3,7 @@
     Our Process
   </div>
   <div class="steps">
-    <app-process image="../../../assets/images/reserve.png" title="Reserve" description="Reprehenderit ullamco laborum eiusmod esse nostrud."></app-process>
-    <app-process image="../../../assets/images/buy.png" title="Buy" description="Reprehenderit ullamco laborum eiusmod esse nostrud."></app-process>
-    <app-process image="../../../assets/images/deliver.png" title="Deliver" description="Reprehenderit ullamco laborum eiusmod esse nostrud."></app-process>
-    <app-process image="../../../assets/images/pickup.png" title="Pick Up" description="Reprehenderit ullamco laborum eiusmod esse nostrud."></app-process>
+    <app-process *ngFor="let process of processes" [process]="process"></app-process>
+    <app-process></app-process>
+  </div>
 </div>
