@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+  openQuote=false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onQuote(){
+    console.log('quote')
+    this.openQuote = !this.openQuote
+    console.log("openQuote: ", this.openQuote);
+
   }
 
 }

@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
-<app-cover></app-cover>
+<app-cover (contact)="onQuote()"></app-cover>
 <app-warningbar></app-warningbar>
 <app-processbar></app-processbar>
 <app-dumpstersbar></app-dumpstersbar>
 <app-contact></app-contact>
-<app-quotebar></app-quotebar>
+<app-quotebar (close)="onQuote()" [ngClass]="openQuote ? '': 'hidden'"></app-quotebar>

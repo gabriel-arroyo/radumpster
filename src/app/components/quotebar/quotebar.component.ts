@@ -1,13 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Dumpster } from 'src/app/models/dumpster';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
 
 @Component({
   selector: 'app-quotebar',
@@ -45,12 +37,22 @@ export class QuotebarComponent implements OnInit {
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'
     }
   ]
+  @Output() quote = new EventEmitter()
+  @Output() close = new EventEmitter()
   isOpen = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toggle(){
+    this.isOpen = !this.isOpen
+  }
+  onQuote(){
+    this.quote.emit()
+  }
+  onClose(){
+    this.close.emit()
+  }
 
 }
