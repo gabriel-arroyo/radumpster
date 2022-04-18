@@ -14,10 +14,10 @@
   flex-direction: column;
   color: white;
   font-weight: bold;
-  padding-top: 6em;
+  padding-top: 3em;
   margin-left: 2vw;
   margin-right: 1vw;
-  font-size: 1vw;
+  font-size: 1.6vw;
 }
 .title {
   font-size: 2.8vw;
@@ -26,7 +26,7 @@
   padding-bottom: 2vw;
 }
 .address {
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding-bottom: 1.5vw;
 }
 .form {
@@ -71,4 +71,62 @@ input {
 }
 textarea {
   border-radius: 15px;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .info-container {
+    font-size: 4vw;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 2vw;
+  }
+  .address {
+    font-size: 4vw;
+    padding-bottom: 1.5vw;
+  }
+  .form {
+  }
+  label {
+    color: white;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 0.4em;
+    font-size: 1.2em;
+  }
+  .buttons {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+  }
+  button {
+    margin-right: 2vw;
+    margin-bottom: 10px;
+    background-color: #91d100;
+    color: white;
+    font-weight: 800;
+    font-family: "Raleway";
+    font-size: 1.7em;
+    padding: 0.3em 0.6em;
+    border-radius: 15px;
+    text-transform: uppercase;
+  }
+  input {
+    border-radius: 10px;
+    line-height: 1em;
+    height: 2em;
+  }
+  textarea {
+    border-radius: 15px;
+  }
 }

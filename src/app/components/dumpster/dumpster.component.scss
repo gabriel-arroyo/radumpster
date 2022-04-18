@@ -1,32 +1,56 @@
 .container {
-  margin: 5vw;
+  margin: 10px;
   background-color: #1d213e;
   color: white;
   font-family: "Raleway";
   text-align: center;
-  position: relative;
   overflow: hidden;
-  padding-bottom: 4vw;
-  display: flex;
+  padding-bottom: 18vw;
+
+  flex-grow: 1;
 }
 
 .image {
-  position: absolute;
-  // border-radius: 0 0 50% 50%;
-  // top: -4vw;
-  // left: 0;
+  border-radius: 0 0 50% 50%;
   width: 100%;
+}
+.title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .button {
   height: 6vw;
   width: 6vw;
-  position: absolute;
-  bottom: -2vw;
-  left: 50%;
-  margin-left: -3vw;
+  margin-left: 37%;
+  margin-top: -20%;
   -webkit-filter: drop-shadow(15px 15px 15px #222);
   filter: drop-shadow(15px 15px 15px #222);
   cursor: pointer;
   transition: transform 0.25s ease;
 }
 
+@media (max-width: 600px) {
+  .title {
+    font-size: 5vw;
+    margin-top: 50px;
+  }
+  .subtitle {
+    font-size: 4vw;
+  }
+  .button {
+    height: 17vw;
+    width: 17vw;
+    margin-left: 40%;
+    margin-top: -20%;
+    -webkit-filter: drop-shadow(15px 15px 15px #222);
+    filter: drop-shadow(15px 15px 15px #222);
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+}

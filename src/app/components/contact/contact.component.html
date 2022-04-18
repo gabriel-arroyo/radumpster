@@ -1,15 +1,25 @@
 <div id="contact" class="container">
   <div class="info-container">
-    <div class="title">Contact Us </div>
-    <div class="address">{{address}}</div>
-    <div *ngFor="let info of contactArray"> {{info}} </div>
+    <div class="title">Contact Us</div>
+    <div class="address">{{ address }}</div>
+    <div *ngFor="let info of contactArray">{{ info }}</div>
   </div>
   <form>
     <div class="form">
       <label for="fname">First Name</label>
-      <input (change)="changeName($event)" type="text" class="form-control" name="fname">
+      <input
+        (change)="changeName($event)"
+        type="text"
+        class="form-control"
+        name="fname"
+      />
       <label (change)="changeLastName($event)" for="lname">Last Name</label>
-      <input (change)="changeMessage($event)" type="text" class="form-control" name="lname">
+      <input
+        (change)="changeMessage($event)"
+        type="text"
+        class="form-control"
+        name="lname"
+      />
       <label for="message">Message</label>
       <textarea rows="5" cols="80" name="message"></textarea>
     </div>
