@@ -1,22 +1,31 @@
-
-.container{
-  margin-top:2em;
-  margin-bottom:5em;
-  padding:2em;
-padding-bottom:2em;
-padding-top:.1em;
+.container {
+  margin-top: 2em;
+  margin-bottom: 5em;
+  padding: 2em;
+  padding-bottom: 2em;
+  padding-top: 0.1em;
 }
-.title{
-  color:#1d213e;
-  font-size:3vw;
-  font-family:"Raleway";
-  font-weight:800;
-  text-align:center;
-  padding:3vw;
-}
-
-.dumpsters{
-  display:flex;
-  flex-direction:row;
+.title {
+  color: #1d213e;
+  font-size: 3vw;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+  padding: 3vw;
 }
 
+.dumpsters {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .dumpsters {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .title {
+    font-size: 5vw;
+  }
+}

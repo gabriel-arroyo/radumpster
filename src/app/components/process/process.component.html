@@ -1,6 +1,10 @@
-    <a href="#contact">
-      <div class ="box" [ngStyle]="{'background-image':'url('+process.imageSrc+')'}">
-        <div class="step-title">{{process.title}}</div>
-        <div class="step-description">{{process.description}}</div>
-      </div>
-    </a>
+<a href="#contact">
+  <!-- <div class ="box" [ngStyle]="{'background-image':'url('+process.imageSrc+')'}"> -->
+  <div class="box">
+    <img src="{{ process.imageSrc }}" alt="process" />
+    <div class="box-text">
+      <div class="step-title">{{ process.title }}</div>
+      <div class="step-description">{{ process.description }}</div>
+    </div>
+  </div>
+</a>

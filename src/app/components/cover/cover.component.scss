@@ -1,41 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap');
-.cover{
-  width:100%;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
+.cover {
+  width: 100%;
 }
 
-.text-container{
-  position:absolute;
+.text-container {
+  position: absolute;
   margin-top: 50px;
-  top:2vw;
-  left:2vw;
-  display:flex;
-  flex-direction:column;
-justify-content: center;
+  top: 2vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.title{
-  width:30%;
-  font-size:4vw;
-  font-family:"Raleway";
-  font-weight:800;
-  color:white;
-  padding:7vw;
-  padding-bottom:0;
+.title {
+  width: 30%;
+  font-size: 4vw;
+  font-family: "Raleway";
+  font-weight: 800;
+  color: white;
+  padding-top: 7vw;
+  padding-left: 7vw;
+  padding-bottom: 0;
 }
-.subtitle{
-  width:40%;
-  font-family:"Raleway";
-  font-size:1.9vw;
-  color:white;
-  padding-left:7vw;
-  padding-top:1vw;
+.subtitle {
+  width: 40%;
+  font-family: "Raleway";
+  font-size: 1.9vw;
+  color: white;
+  padding-left: 7vw;
+  padding-top: 1vw;
 }
-.button{
-  width:7vw;
-  margin-left:20%;
-  margin-top:1.3vw;
-   -webkit-filter: drop-shadow(15px 15px 15px #222);
+.button {
+  width: 7vw;
+  margin-left: 20%;
+  margin-top: 1.3vw;
+  -webkit-filter: drop-shadow(15px 15px 15px #222);
   filter: drop-shadow(15px 15px 15px #222);
-  cursor:pointer;
+  cursor: pointer;
   animation: center-animate 1s ease infinite alternate;
 }
 @keyframes center-animate {
@@ -44,5 +45,28 @@ justify-content: center;
   }
   100% {
     transform: scale(1);
+  }
+}
+@media (max-width: 600px) {
+  .cover {
+    width: 100%;
+  }
+  .title {
+    width: 50%;
+    font-size: 5vw;
+    padding-top: 4vw;
+    padding-left: 5vw;
+  }
+  .subtitle {
+    display: none;
+  }
+  .button {
+    width: 15vw;
+    margin-left: 20%;
+    margin-top: 1.3vw;
+    -webkit-filter: drop-shadow(15px 15px 15px #222);
+    filter: drop-shadow(15px 15px 15px #222);
+    cursor: pointer;
+    animation: center-animate 1s ease infinite alternate;
   }
 }

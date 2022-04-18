@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="title">
-    Our Process
-  </div>
+  <div class="title">Our Process</div>
   <div class="steps">
-    <app-process *ngFor="let process of processes" [process]="process"></app-process>
-    <app-process></app-process>
+    <app-process
+      *ngFor="let process of processes"
+      [process]="process"
+    ></app-process>
   </div>
 </div>
