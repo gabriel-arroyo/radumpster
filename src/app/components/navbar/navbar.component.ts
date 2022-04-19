@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
   @Input() navitems: any[] = [
     { title: 'Home', link: '#cover' },
     { title: 'Why Us', link: '/whyus' },
-    { title: 'Our Dumpsters', link: '#dumpsters' },
+    { title: 'Our Dumpsters', link: '/ourdumpsters' },
   ]
   selected: number = 0;
 
