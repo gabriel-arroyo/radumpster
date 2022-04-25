@@ -2,5 +2,5 @@
 <div class="text-container">
   <div class="title">{{title}}</div>
   <div class="subtitle">{{subtitle}}</div>
-  <img (click)="onContact()" class="button" src="{{buttonSrc}}" alt="cover" />
+  <img [routerLink]="quoteHref" class="button" src="{{buttonSrc}}" alt="cover" />
 </div>

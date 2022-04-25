@@ -10,6 +10,9 @@ import { ProcessComponent } from './process/process.component';
 import { DumpsterComponent } from './dumpster/dumpster.component';
 import {RouterModule} from '@angular/router';
 import { QuotebarComponent } from './quotebar/quotebar.component';
+import { ReasonComponent } from './reason/reason.component';
+import { OurDumpsterItemComponent } from './our-dumpster-item/our-dumpster-item.component';
+import { OurDumpsterContainerComponent } from './our-dumpster-container/our-dumpster-container.component';
 
 
 @NgModule({
@@ -23,6 +26,9 @@ import { QuotebarComponent } from './quotebar/quotebar.component';
     DumpsterComponent,
     ContactComponent,
     QuotebarComponent,
+    ReasonComponent,
+    OurDumpsterItemComponent,
+    OurDumpsterContainerComponent,
   ],
   imports: [
     CommonModule,
@@ -38,6 +44,9 @@ import { QuotebarComponent } from './quotebar/quotebar.component';
     DumpsterComponent,
     ContactComponent,
     QuotebarComponent,
+    ReasonComponent,
+    OurDumpsterItemComponent,
+    OurDumpsterContainerComponent,
   ],
 })
 export class ComponentsModule { }

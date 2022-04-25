@@ -6,14 +6,15 @@ import { OurDumpstersComponent } from './pages/our-dumpsters/our-dumpsters.compo
 import { WhyusComponent } from './pages/whyus/whyus.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'base', component: BaseComponent },
   { path: 'whyus', component: WhyusComponent },
   { path: 'ourdumpsters', component: OurDumpstersComponent },
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

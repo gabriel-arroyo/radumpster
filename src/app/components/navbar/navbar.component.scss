@@ -18,6 +18,11 @@ $movile: 668px;
   padding-right: 10%;
   padding-left: 5%;
 }
+
+.li__nav__item, ul {
+  display: flex !important;
+  flex-direction: row !important;
+}
 .nav__item {
   position: relative;
   margin: 0px 10px;
@@ -44,6 +49,7 @@ $movile: 668px;
   height: 4px;
   background-color: rgb(0, 51, 161);
 }
+
 
 .nav__item::before {
   transform: scaleX(0);

@@ -1,0 +1,101 @@
+$width-lg: 20vw;
+$width-md: 200px;
+
+.reason-content {
+  display: flex;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.gradient {
+  height: $width-lg;
+  width: $width-lg;
+  background: rgb(4, 57, 216);
+  background: linear-gradient(
+    0deg,
+    rgb(4, 57, 216) 31%,
+    rgba(134, 255, 0, 1) 100%
+  );
+  padding: 7px;
+}
+.color-bg {
+  height: $width-lg;
+  background-color:  #1d213e;
+}
+.photo {
+  position: relative;
+  top: 15px;
+  object-fit: cover;
+  height: calc($width-lg + 5px);
+  width: calc($width-lg + 5px);
+}
+
+.right {
+  right: 15px;
+}
+.left{
+  left: 15px;
+}
+
+.info-container {
+  margin: 10%;
+  max-width: 60%;
+  font-family: "Raleway";
+  color:white;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2vw;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  .reason-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: column;
+}
+
+.gradient {
+  height: $width-md;
+  width: $width-md;
+}
+.color-bg {
+  height: $width-md;
+}
+.photo {
+  height: calc($width-md + 5px);
+  width: calc($width-md + 5px);
+}
+
+.left{
+  right: 15px;
+}
+
+.info-container {
+  margin: 10%;
+  max-width: 90%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3vw;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 3.5vw;
+}
+
+}

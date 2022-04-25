@@ -1,3 +1,43 @@
-img {
-  width: 100%;
+
+.container{
+  width: 70%;
+  background-color:  #1d213e;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+.reason {
+  margin:15px
+}
+.title {
+  color: white;
+  font-size: 3vw;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+  padding: 3vw;
+}
+
+@media (max-width: 600px) {
+
+.container{
+  padding: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+.reason {
+  margin:15px
+}
+.title {
+  color: white;
+  font-size: 6vw;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+  padding: 6vw;
+}
 }
