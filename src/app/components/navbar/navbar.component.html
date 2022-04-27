@@ -3,12 +3,10 @@
   <ul class="nav__list">
     <li
     *ngFor="let item of navitems, let i = index"
-    class="nav__item"
-    [class.active]="selected===i"
-    (click)="select(i)"
+    class="li__nav__item"
     >
         <a *ngIf="item.link.charAt(0)==='#'" [href]="item.link">{{item.title}}</a>
-        <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]">{{item.title}}</a>
+        <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]" class="nav__item" [routerLinkActive]="['active']">{{item.title}}</a>
 
     </li>
     <!-- <li class="nav__item" [class.active]="selected === 0" (click)="select(0)">

@@ -10,14 +10,11 @@ export class CoverComponent implements OnInit {
 @Input() title:string = 'Big or Small, we hault it all!'
 @Input() subtitle:string = 'At Rent-A-Dumpster, we believe in offering the highest quality of dumpsters rental services at the most competitive prices.'
 @Input() buttonSrc:string = '../../../assets/images/btn-get-a-quote.png'
-@Output() contact = new EventEmitter();
+@Input() quoteHref: string = '/quote'
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onContact(){
-    this.contact.emit()
-  }
 }

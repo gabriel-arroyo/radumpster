@@ -1,0 +1,27 @@
+.container {
+  max-width: 100%;
+  background-color:  #1d213e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+}
+
+.items{
+  flex-direction: row;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: white;
+  font-size: 3vw;
+  font-family: "Raleway";
+  font-weight: 800;
+  text-align: center;
+  padding: 3vw;
+}
+
