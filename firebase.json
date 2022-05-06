@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/radumpster",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
