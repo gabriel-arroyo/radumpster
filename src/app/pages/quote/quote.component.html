@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="title">Get a Quote</div>
+  <div class="quote-container">
+    <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
+      <div class="form-group">
+        <label for="location" class="center">Location:
+          <input type="text" id="location" formControlName="location" placeholder="location">
+        </label>
+         <label for="startDate" class="center">Start Date:
+          <input type="text" id="startDate" formControlName="startDate" placeholder="startDate">
+        </label>
+         <label for="endDate" class="center">End Date:
+          <input type="text" id="endDate" formControlName="endDate" placeholder="endDate">
+        </label>
+         <label for="dumpsterType" class="center">Dumpster Type:
+          <input type="text" id="dumpsterType" formControlName="location" placeholder="dumpsterType">
+        </label>
+      </div>
+      <div class="map-container"></div>
+      <button class="button" type="submit">Submit</button>
+      <div *ngIf="messageActive" class="message">{{message}}</div>
+      <div  *ngIf="messageActive && total > 0" >Total: $ {{total}}</div>
+    </form>
+  </div>
+
+</div>

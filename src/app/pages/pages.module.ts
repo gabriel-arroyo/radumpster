@@ -4,7 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule} from '../components/components.module';
 import { BaseComponent } from './base/base.component';
 import { WhyusComponent } from './whyus/whyus.component';
-import { OurDumpstersComponent } from './our-dumpsters/our-dumpsters.component'
+import { OurDumpstersComponent } from './our-dumpsters/our-dumpsters.component';
+import { QuoteComponent } from './quote/quote.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -13,11 +15,9 @@ import { OurDumpstersComponent } from './our-dumpsters/our-dumpsters.component'
     HomeComponent,
     BaseComponent,
     WhyusComponent,
-    OurDumpstersComponent
+    OurDumpstersComponent,
+    QuoteComponent,
   ],
-  imports: [
-    CommonModule,
-    ComponentsModule,
-  ]
+  imports: [CommonModule, ComponentsModule, FormsModule, ReactiveFormsModule],
 })
-export class PagesModule { }
+export class PagesModule {}
