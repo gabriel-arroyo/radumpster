@@ -9,7 +9,6 @@ import { ContactComponent } from './contact/contact.component';
 import { ProcessComponent } from './process/process.component';
 import { DumpsterComponent } from './dumpster/dumpster.component';
 import {RouterModule} from '@angular/router';
-import { QuotebarComponent } from './quotebar/quotebar.component';
 import { ReasonComponent } from './reason/reason.component';
 import { OurDumpsterItemComponent } from './our-dumpster-item/our-dumpster-item.component';
 import { OurDumpsterContainerComponent } from './our-dumpster-container/our-dumpster-container.component';
@@ -27,7 +26,6 @@ import { RoundButtonComponent } from './round-button/round-button.component';
     ProcessComponent,
     DumpsterComponent,
     ContactComponent,
-    QuotebarComponent,
     ReasonComponent,
     OurDumpsterItemComponent,
     OurDumpsterContainerComponent,
@@ -44,7 +42,6 @@ import { RoundButtonComponent } from './round-button/round-button.component';
     ProcessComponent,
     DumpsterComponent,
     ContactComponent,
-    QuotebarComponent,
     ReasonComponent,
     OurDumpsterItemComponent,
     OurDumpsterContainerComponent,

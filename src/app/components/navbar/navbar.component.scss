@@ -1,5 +1,4 @@
 $movile: 668px;
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
 .nav {
   position: sticky;
   display: flex;
@@ -32,7 +31,7 @@ $movile: 668px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 15px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Gotham Medium";
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -75,9 +74,12 @@ $movile: 668px;
 }
 img {
   margin: 15px;
-  width: 7vw;
-  min-width: 240px;
-  max-width:80px;
+  max-width: 240px;
+  max-height: 240px;
+  min-width:20px;
+  min-height:20px;
+  width: auto;
+  height: auto;
 }
 a {
   color: black;
