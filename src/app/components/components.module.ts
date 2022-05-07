@@ -13,6 +13,8 @@ import { QuotebarComponent } from './quotebar/quotebar.component';
 import { ReasonComponent } from './reason/reason.component';
 import { OurDumpsterItemComponent } from './our-dumpster-item/our-dumpster-item.component';
 import { OurDumpsterContainerComponent } from './our-dumpster-container/our-dumpster-container.component';
+import { ButtonComponent } from './button/button.component';
+import { RoundButtonComponent } from './round-button/round-button.component';
 
 
 @NgModule({
@@ -29,11 +31,10 @@ import { OurDumpsterContainerComponent } from './our-dumpster-container/our-dump
     ReasonComponent,
     OurDumpsterItemComponent,
     OurDumpsterContainerComponent,
+    ButtonComponent,
+    RoundButtonComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
+  imports: [CommonModule, RouterModule],
   exports: [
     CoverComponent,
     NavbarComponent,
@@ -47,6 +48,8 @@ import { OurDumpsterContainerComponent } from './our-dumpster-container/our-dump
     ReasonComponent,
     OurDumpsterItemComponent,
     OurDumpsterContainerComponent,
+    ButtonComponent,
+    RoundButtonComponent,
   ],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}

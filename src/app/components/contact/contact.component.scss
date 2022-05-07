@@ -1,12 +1,11 @@
 .container {
-  background-color: #1d213e;
-  background-color: #91d100;
+  background-color: #93d501;
   margin-top: 4em;
   padding-bottom: 2em;
   padding-top: 3em;
   display: flex;
   flex-direction: row;
-  font-family: "Raleway";
+  font-family: "Gotham Medium";
   width: 100%;
   justify-content: center;
 }
@@ -19,19 +18,23 @@
   margin-left: 2vw;
   margin-right: 1vw;
   font-size: 1.6vw;
+  font-family: "Poppins Medium";
 }
 .title {
   font-size: 2.8vw;
   font-weight: 800;
   text-align: center;
   padding-bottom: 2vw;
+  font-family: "Gotham Black";
 }
 .address {
+  font-family: "Poppins Medium";
   font-size: 2vw;
   padding-bottom: 1.5vw;
 }
 .form {
-  background-color: #111520;
+  font-family: "Poppins Bold";
+  background-color: #364532;
   display: flex;
   flex-direction: column;
   padding-top: 2vw;
@@ -54,18 +57,7 @@ label {
   flex-direction: row;
   padding-left: 10vw;
 }
-button {
-  margin-right: 2vw;
-  background-color: #91d100;
-  background: linear-gradient(353deg, rgba(2,44,166,1) 31%, rgba(134,255,0,1) 100%);
-  color: white;
-  font-weight: 800;
-  font-family: "Raleway";
-  font-size: 1.7em;
-  padding: 0.3em 0.6em;
-  border-radius: 15px;
-  text-transform: uppercase;
-}
+
 input {
   border-radius: 10px;
   line-height: 1em;
@@ -111,19 +103,7 @@ textarea {
     flex-direction: column;
     padding-left: 10vw;
   }
-  button {
-    margin-right: 2vw;
-    margin-bottom: 10px;
 
-    background: linear-gradient(353deg, rgba(2,44,166,1) 31%, rgba(134,255,0,1) 100%);
-    color: white;
-    font-weight: 800;
-    font-family: "Raleway";
-    font-size: 1.7em;
-    padding: 0.3em 0.6em;
-    border-radius: 15px;
-    text-transform: uppercase;
-  }
   input {
     border-radius: 10px;
     line-height: 1em;

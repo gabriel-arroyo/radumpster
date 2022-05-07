@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class OurDumpsterItemComponent implements OnInit {
   @Input() imgSrc: string = '../../../assets/images/5_yard_dumpster.jpg';
   @Input() position: string = 'left';
+  @Input() index: number = 0;
   constructor() {}
 
   ngOnInit(): void {}

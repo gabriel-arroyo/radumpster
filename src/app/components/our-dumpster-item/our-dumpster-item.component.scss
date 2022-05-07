@@ -1,23 +1,22 @@
-$width-lg: 20vw;
-$width-md: 200px;
+$height-lg: 20vw;
+$height-md: 200px;
+$square-lg: calc(20px + $height-lg);
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.reason-content {
-  display: flex;
-}
-
-.reverse {
-  flex-direction: row-reverse;
+  display: block;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  height: calc(30px + $height-lg);
 }
 
 .gradient {
-  margin:10px;
-  height: $width-lg;
-  width: $width-lg;
+  position: relative;
+  z-index:0;
+  left: -5px;
+  top: calc(-5px - $height-lg);
+  margin: 0px;
+  height: $square-lg;
+  width: $square-lg;
   background: rgb(4, 57, 216);
   background: linear-gradient(
     0deg,
@@ -27,81 +26,37 @@ $width-md: 200px;
   padding: 7px;
 }
 .color-bg {
-  height: $width-lg;
-  background-color:  #1d213e;
+  height: $square-lg;
+  background-color: #1d213e;
 }
 .photo {
-  position: relative;
+  position:relative;
+  z-index: 1;
   top: 15px;
   object-fit: cover;
-  height: calc($width-lg + 5px);
-  width: calc($width-lg + 5px);
+  height: $height-lg;
 }
 
 .right {
   right: 15px;
 }
-.left{
+.left {
   left: 15px;
 }
 
-.info-container {
-  margin: 10%;
-  max-width: 60%;
-  font-family: "Raleway";
-  color:white;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 2vw;
-  margin-bottom: 15px;
-}
-
-.text {
-  font-size: 1.5vw;
-}
-
 @media (max-width: 600px) {
-  .reason-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .gradient {
+    height: $height-md;
+    width: $height-md;
+  }
+  .color-bg {
+    height: $height-md;
+  }
+  .photo {
+    height: calc($height-md + 5px);
+  }
 
-.reverse {
-  flex-direction: column;
-}
-
-.gradient {
-  height: $width-md;
-  width: $width-md;
-}
-.color-bg {
-  height: $width-md;
-}
-.photo {
-  height: calc($width-md + 5px);
-  width: calc($width-md + 5px);
-}
-
-.left{
-  right: 15px;
-}
-
-.info-container {
-  margin: 10%;
-  max-width: 90%;
-}
-
-.title {
-  font-weight: bold;
-  font-size: 3vw;
-  margin-bottom: 15px;
-}
-
-.text {
-  font-size: 3.5vw;
-}
-
+  .left {
+    right: 15px;
+  }
 }

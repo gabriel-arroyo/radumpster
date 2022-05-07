@@ -16,5 +16,7 @@ export class CoverComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  goToQuote() {
 
+  }
 }

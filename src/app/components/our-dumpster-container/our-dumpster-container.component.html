@@ -1,6 +1,11 @@
 <div class="container">
-   <div class="title">Our Dumpsters</div>
-   <div class="items">
-     <app-our-dumpster-item class="item" *ngFor="let item of ourDumpsters"></app-our-dumpster-item>
-    </div>
+  <div class="title">Our Dumpsters</div>
+  <div class="items">
+    <app-our-dumpster-item
+      class="item"
+      *ngFor="let item of ourDumpsters; let i = index"
+      [index]="i"
+      imgSrc="{{ item }}"
+    ></app-our-dumpster-item>
+  </div>
 </div>

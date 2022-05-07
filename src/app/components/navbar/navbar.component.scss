@@ -85,6 +85,7 @@ a {
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  white-space: pre;
 }
 
 @media (max-width: 600px) {
@@ -105,5 +106,6 @@ a {
   a {
     white-space: normal;
     max-width: 50px;
+    white-space: pre;
   }
 }
