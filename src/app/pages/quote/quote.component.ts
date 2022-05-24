@@ -9,8 +9,8 @@ import { FormBuilder } from '@angular/forms';
 export class QuoteComponent implements OnInit {
   quoteForm;
   messageActive: boolean = true;
-  message: string = 'Sorry, we don\'t have dumpsters available'
-  total: number = 0;
+  message: string = 'Sorry, we don\'t have dumpsters available for this location and date'
+  total: number = 20;
   location: string = '';
   startDate: string = '';
   endDate: string = '';

@@ -12,12 +12,8 @@ $width-md: 200px;
 .gradient {
   height: $width-lg;
   width: $width-lg;
-  background: rgb(4, 57, 216);
-  background: linear-gradient(
-    0deg,
-    rgb(4, 57, 216) 31%,
-    rgba(134, 255, 0, 1) 100%
-  );
+  background: #12468d;
+  background: linear-gradient(0deg, #12468d, #7fbe13);
   padding: 7px;
 }
 .color-bg {
