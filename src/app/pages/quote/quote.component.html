@@ -6,23 +6,17 @@
       <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
         <div class="form-group">
           <div class="row">
-            <label for="location" class="center"
-              >Location:
-              <input type="text" id="location" formControlName="location" />
+            <label for="dumpsterType" class="center">Dumpster Type:
+              <input type="date" id="dumpsterType" formControlName="location" name="trip-start" value="2022-06-22"
+                min="2022-01-01" max="2030-12-31" />
+            </label>
+            <label for="startDate" class="center">Date:
+              <input type="text" id="startDate" formControlName="startDate" />
             </label>
           </div>
           <div class="row">
-            <label for="startDate" class="center"
-              >Date:
-              <input type="text" id="startDate" formControlName="startDate" />
-            </label>
-            <label for="dumpsterType" class="center"
-              >Dumpster Type:
-              <input
-                type="text"
-                id="dumpsterType"
-                formControlName="location"
-              />
+            <label for="location" class="center">Location:
+              <input type="text" id="location" formControlName="location" />
             </label>
           </div>
         </div>
@@ -31,14 +25,13 @@
             <img class="map" src="../../../assets/images/map.png" alt="map" />
           </div>
         </div>
-        
         <div class="bottom">
           <app-button text="Submit" size="sm"></app-button>
           <div *ngIf="messageActive" class="message">{{ message }}</div>
           <div class="gradient-2 gradient-sm">
             <div class="total" *ngIf="total > 0">Total: $ {{ total }}</div>
           </div>
-          
+
         </div>
       </form>
     </div>
