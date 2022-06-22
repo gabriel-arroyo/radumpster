@@ -3,22 +3,26 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 6vw;
-  margin-right: 6vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  background-color: white;
 }
 
 .alert {
   height: 14vw;
 }
+
 .btn-contact {
   height: 5vw;
   cursor: pointer;
   transition: transform 0.25s ease;
-  background: linear-gradient(353deg, rgba(2,44,166,1) 31%, rgba(134,255,0,1) 100%);
+  background: linear-gradient(353deg, rgba(2, 44, 166, 1) 31%, rgba(134, 255, 0, 1) 100%);
 }
+
 .btn-contact:hover {
   transform: scale(1.2);
 }
+
 .text {
   font-family: "Gotham Black";
   font-size: 2.5vw;
@@ -38,14 +42,17 @@
   .alert {
     height: 14vw;
   }
+
   .btn-contact {
     height: 9vw;
     cursor: pointer;
     transition: transform 0.25s ease;
   }
+
   .btn-contact:hover {
     transform: scale(1.2);
   }
+
   .text {
     font-family: "Gotham Bold";
     text-align: center;

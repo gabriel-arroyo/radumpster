@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SectionTitleComponent implements OnInit {
   @Input() title: string = ""
+  @Input() color: string = "light"
   constructor() { }
 
   ngOnInit(): void {
