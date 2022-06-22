@@ -13,18 +13,8 @@
 .items {
   display: flex;
   flex-direction: row;
-  max-width: 80%;
+  // max-width: 80%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-
-.title {
-  color: white;
-  font-size: 3vw;
-  font-family: "Gotham Bold";
-  font-weight: 800;
-  text-align: center;
-  padding: 3vw;
 }

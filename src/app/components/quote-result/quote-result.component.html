@@ -1,0 +1,7 @@
+<div class="bottom">
+    <app-error-message [active]="!available">{{message}}</app-error-message>
+    <div *ngIf="available" class="gradient-2 gradient-sm">
+        <div class="total" *ngIf="total > 0">Total: $ {{ total }}</div>
+    </div>
+    <app-button *ngIf="available" size="sm">Reserve</app-button>
+</div>

@@ -6,69 +6,28 @@
   height: 100vh;
   font-family: "Gotham Bold";
   padding-bottom: 300px;
-  height: 100%;
+  height: 140%;
 }
 
-.title {
-  color: white;
-  font-size: 3vw;
-  font-family: "Gotham Black";
-  font-weight: 800;
-  text-align: center;
-  padding: 3vw;
+.margin-row1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.quote-container {
-  background-color: white;
-  border-radius: 15px;
-  padding: 1vw 3vw 1vw 3vw;
-  display: flex;
-  justify-content: center;
-}
-
-.gradient {
-  background: #12468d;
-  background: linear-gradient(0deg, #12468d, #7fbe13);
-  padding: 5px;
-  border-radius: 15px;
-  width: 70%;
-  align-self: center;
-}
-
-.gradient-2 {
-  background: linear-gradient(0deg, #7fbe13, #12468d) border-box;
-  border-radius: 3vw;
-  border: 1px solid transparent;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2px;
-}
-
-.gradient-sm {
-  border-radius: 12px;
-}
-
-.map-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.map {
-  width: 100%;
-  align-self: center;
-}
-
-.row {
+.row2 {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 100%;
+}
+
+.location {
+  width: 67vw;
+}
+
+.map {
+  width: 70vw;
+  align-self: center;
 }
 
 label {
@@ -100,28 +59,8 @@ input {
   padding-right: 10px;
 }
 
-.bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2vw;
-}
 
-.total {
-  padding: .8vw 1.4vw;
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.69);
-  box-shadow: 1px 5px 15px 0px rgba(0, 0, 0, 0.69);
-}
 
-.message {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
-  color: red;
-  text-align: center;
-}
 
 @media (max-width: 600px) {
   .container {

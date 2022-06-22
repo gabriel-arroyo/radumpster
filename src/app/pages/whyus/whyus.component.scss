@@ -1,7 +1,6 @@
-
-.container{
+.container {
   width: 70%;
-  background-color:  #1d213e;
+  background-color: #1d213e;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -9,9 +8,11 @@
   padding-right: 20%;
 
 }
+
 .reason {
-  margin:15px
+  margin: 15px
 }
+
 .title {
   color: white;
   font-size: 3vw;
@@ -21,23 +22,25 @@
   padding: 3vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820) {
 
-.container{
-  padding: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
+  .container {
+    padding: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
 
-}
-.reason {
-  margin:15px
-}
-.title {
-  color: white;
-  font-size: 6vw;
-  font-family: "Gotham Black";
-  font-weight: 800;
-  text-align: center;
-  padding: 6vw;
-}
+  }
+
+  .reason {
+    margin: 15px
+  }
+
+  .title {
+    color: white;
+    font-size: 6vw;
+    font-family: "Gotham Black";
+    font-weight: 800;
+    text-align: center;
+    padding: 6vw;
+  }
 }

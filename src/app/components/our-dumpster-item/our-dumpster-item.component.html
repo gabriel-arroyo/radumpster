@@ -1,11 +1,7 @@
 <div class="container">
-  <img
-    class="photo"
-    src="{{ imgSrc }}"
-    class="{{ position }}"
-    alt="{{ imgSrc }}"
-  />
-  <div *ngIf="index === 0 || (index + 1)% 4 === 0 || (index)% 4 === 0" class="gradient">
+  <img class="photo" src="{{ imgSrc }}" class="{{ position }}" alt="{{ imgSrc }}" />
+  <!-- <div *ngIf="index === 0 || (index + 1)% 4 === 0 || (index)% 4 === 0" class="gradient"> -->
+  <div class="gradient" [class.visible]="index === 0 || (index + 1)% 4 === 0 || (index)% 4 === 0">
     <div class="color-bg">
     </div>
   </div>

@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
     { title: 'Home', link: '/home' },
     { title: 'Why Us', link: '/whyus' },
     { title: 'Our Dumpsters', link: '/ourdumpsters' },
+    { title: 'Login', link: '/login' },
   ]
 
   constructor() { }

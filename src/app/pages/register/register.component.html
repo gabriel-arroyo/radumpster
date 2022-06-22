@@ -1,0 +1,15 @@
+<app-navbar logo="../../../assets/images/logo-lg.png"></app-navbar>
+<app-background>
+    <app-section-title class="title">Register</app-section-title>
+    <app-form-container>
+        <app-text-input label="Full Name:"></app-text-input>
+        <app-text-input label="Address:"></app-text-input>
+        <app-text-input label="Phone:"></app-text-input>
+        <app-text-input label="Mail:"></app-text-input>
+        <app-text-input label="Password:"></app-text-input>
+        <app-text-input label="Repeat Password:"></app-text-input>
+        <app-error-message [active]="true">Passwords are not equal. Please Verify</app-error-message>
+        <app-button>Register</app-button>
+        <p>You have already an account? Please <a href="/login">Login</a></p>
+    </app-form-container>
+</app-background>

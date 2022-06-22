@@ -7,25 +7,15 @@
   <form>
     <div class="form">
       <label for="fname">First Name</label>
-      <input
-        (change)="changeName($event)"
-        type="text"
-        class="form-control"
-        name="fname"
-      />
+      <input (change)="changeName($event)" type="text" class="form-control" name="fname" />
       <label (change)="changeLastName($event)" for="lname">Last Name</label>
-      <input
-        (change)="changeMessage($event)"
-        type="text"
-        class="form-control"
-        name="lname"
-      />
+      <input (change)="changeMessage($event)" type="text" class="form-control" name="lname" />
       <label for="message">Message</label>
       <textarea rows="5" cols="80" name="message"></textarea>
     </div>
     <div class="buttons">
-      <app-button (click)="onSubmit()" text="Submit"></app-button>
-      <app-button (click)="onChat()" text="Chat"></app-button>
+      <app-button (click)="onSubmit()">Submit</app-button>
+      <app-button (click)="onChat()">Chat</app-button>
     </div>
   </form>
 </div>

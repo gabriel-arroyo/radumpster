@@ -1,0 +1,12 @@
+<app-navbar logo="../../../assets/images/logo-lg.png"></app-navbar>
+<app-background>
+    <app-section-title>Login</app-section-title>
+    <app-form-container>
+        <app-text-input label="User:"></app-text-input>
+        <app-text-input label="Password:"></app-text-input>
+        <app-error-message [active]="true">Incorrect credentials. Please Verify</app-error-message>
+        <app-button>Login</app-button>
+        <p>You dont have an account? Please <a href="/register">Register</a></p>
+    </app-form-container>
+
+</app-background>

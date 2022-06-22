@@ -3,6 +3,9 @@ $width-md: 200px;
 
 .reason-content {
   display: flex;
+  max-width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .reverse {
@@ -16,10 +19,12 @@ $width-md: 200px;
   background: linear-gradient(0deg, #12468d, #7fbe13);
   padding: 7px;
 }
+
 .color-bg {
   height: $width-lg;
-  background-color:  #1d213e;
+  background-color: #1d213e;
 }
+
 .photo {
   position: relative;
   top: 15px;
@@ -31,7 +36,8 @@ $width-md: 200px;
 .right {
   right: 15px;
 }
-.left{
+
+.left {
   left: 15px;
 }
 
@@ -39,7 +45,7 @@ $width-md: 200px;
   margin: 10%;
   max-width: 60%;
   font-family: "Gotham Medium";
-  color:white;
+  color: white;
 }
 
 .title {
@@ -52,46 +58,48 @@ $width-md: 200px;
   font-size: 1.5vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   .reason-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.reverse {
-  flex-direction: column;
-}
+  .reverse {
+    flex-direction: column;
+  }
 
-.gradient {
-  height: $width-md;
-  width: $width-md;
-}
-.color-bg {
-  height: $width-md;
-}
-.photo {
-  height: calc($width-md + 5px);
-  width: calc($width-md + 5px);
-}
+  .gradient {
+    height: $width-md;
+    width: $width-md;
+  }
 
-.left{
-  right: 15px;
-}
+  .color-bg {
+    height: $width-md;
+  }
 
-.info-container {
-  margin: 10%;
-  max-width: 90%;
-}
+  .photo {
+    height: calc($width-md + 5px);
+    width: calc($width-md + 5px);
+  }
 
-.title {
-  font-weight: bold;
-  font-size: 3vw;
-  margin-bottom: 15px;
-}
+  .left {
+    right: 15px;
+  }
 
-.text {
-  font-size: 3.5vw;
-}
+  .info-container {
+    margin: 10%;
+    max-width: 90%;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    font-size: 3.5vw;
+  }
 
 }

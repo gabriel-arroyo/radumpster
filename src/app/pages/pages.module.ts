@@ -7,6 +7,8 @@ import { WhyusComponent } from './whyus/whyus.component';
 import { OurDumpstersComponent } from './our-dumpsters/our-dumpsters.component';
 import { QuoteComponent } from './quote/quote.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -17,6 +19,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     WhyusComponent,
     OurDumpstersComponent,
     QuoteComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [CommonModule, ComponentsModule, FormsModule, ReactiveFormsModule],
 })

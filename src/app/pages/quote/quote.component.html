@@ -1,39 +1,23 @@
 <app-navbar logo="../../../assets/images/logo-lg.png"></app-navbar>
 <div class="container">
-  <div class="title">Get a Quote</div>
-  <div class="gradient">
-    <div class="quote-container">
-      <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
-        <div class="form-group">
-          <div class="row">
-            <label for="dumpsterType" class="center">Dumpster Type:
-              <input type="date" id="dumpsterType" formControlName="location" name="trip-start" value="2022-06-22"
-                min="2022-01-01" max="2030-12-31" />
-            </label>
-            <label for="startDate" class="center">Date:
-              <input type="text" id="startDate" formControlName="startDate" />
-            </label>
-          </div>
-          <div class="row">
-            <label for="location" class="center">Location:
-              <input type="text" id="location" formControlName="location" />
-            </label>
-          </div>
+  <app-section-title>Get a Quote</app-section-title>
+  <app-form-container>
+    <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
+      <div class="form-group">
+        <app-responsive-row class="margin-row1">
+          <app-text-label label="Dumpster Type:" text="20 Yard"></app-text-label>
+          <app-date-range (changeStart)="onChangeStartDate($event)" (changeEnd)="onChangeEndDate($event)" label="Date:">
+          </app-date-range>
+        </app-responsive-row>
+        <div class="row2">
+          <app-text-input class="location" label="Location:" (change)="onChange($event)" (input)="onInput($event)">
+          </app-text-input>
         </div>
-        <div class="map-container">
-          <div class="gradient-2">
-            <img class="map" src="../../../assets/images/map.png" alt="map" />
-          </div>
-        </div>
-        <div class="bottom">
-          <app-button text="Submit" size="sm"></app-button>
-          <div *ngIf="messageActive" class="message">{{ message }}</div>
-          <div class="gradient-2 gradient-sm">
-            <div class="total" *ngIf="total > 0">Total: $ {{ total }}</div>
-          </div>
-
-        </div>
-      </form>
-    </div>
-  </div>
+      </div>
+      <app-map-container>
+        <img class="map" src="../../../assets/images/map.png" alt="map" />
+      </app-map-container>
+      <app-quote-result [available]=true [total]="20"></app-quote-result>
+    </form>
+  </app-form-container>
 </div>

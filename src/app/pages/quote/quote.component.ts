@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 export class QuoteComponent implements OnInit {
   quoteForm;
   messageActive: boolean = true;
-  message: string = 'Sorry, we don\'t have dumpsters available for this location and date'
+  message: string = 'This tool is currently unable to calculate the price for the selected location, but we would love to know how we can help you! Call Today! (313)999-1352'
   total: number = 20;
   location: string = '';
   startDate: string = '';
@@ -25,9 +25,23 @@ export class QuoteComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onSubmit(data: any) {
-    console.log(data);
+    console.log('submit', data);
   }
+
+  onChangeStartDate(event: Event) {
+    console.log('change', event)
+  }
+  onChangeEndDate(event: Event) {
+    console.log('change', event)
+  }
+  onChange(event: Event) {
+    console.log(event)
+  }
+  onInput(event: Event) {
+    console.log(event)
+  }
+
 }

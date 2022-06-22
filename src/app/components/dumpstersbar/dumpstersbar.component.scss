@@ -5,6 +5,7 @@
   padding-bottom: 2em;
   padding-top: 0.1em;
 }
+
 .title {
   color: #1d213e;
   font-size: 3vw;
@@ -19,12 +20,13 @@
   flex-direction: row;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   .dumpsters {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
   }
+
   .title {
     font-size: 5vw;
   }

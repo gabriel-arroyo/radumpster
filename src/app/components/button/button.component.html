@@ -1,9 +1,6 @@
-<button
-  class="button sm"
-  [class.bg]="size === 'bg'"
-  [class.md]="size === 'md'"
-  [class.sm]="size === 'sm'"
-  [class.button-hover]="hover"
->
-  {{ text }}
-</button>
+<div class="row">
+  <button class="button sm" [class.bg]="size === 'bg'" [class.md]="size === 'md'" [class.sm]="size === 'sm'"
+    [class.button-hover]="hover">
+    <ng-content></ng-content>
+  </button>
+</div>
