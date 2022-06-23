@@ -1,23 +1,13 @@
 <nav class="nav">
   <img src="{{ logo }}" alt="logo" />
   <ul class="nav__list">
-    <li
-    *ngFor="let item of navitems, let i = index"
-    class="li__nav__item"
-    >
-        <a *ngIf="item.link.charAt(0)==='#'" [href]="item.link">{{item.title}}</a>
-        <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]" class="nav__item" [routerLinkActive]="['active']">{{item.title}}</a>
+    <li *ngFor="let item of navitems, let i = index" class="li__nav__item">
+      <a *ngIf="item.link.charAt(0)==='#'" [href]="item.link">{{item.title}} </a>
+      <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]" class="nav__item"
+        [routerLinkActive]="['active']">{{item.title}}</a>
 
     </li>
-    <!-- <li class="nav__item" [class.active]="selected === 0" (click)="select(0)">
-      <a [href]="'#'+link">Home</a>
-    </li>
-    <li class="nav__item" [class.active]="selected === 1" (click)="select(1)">
-      <a [href]="'#'+link">Why Us</a>
-    </li>
-    <li class="nav__item" [class.active]="selected === 2" (click)="select(2)">
-      <a [href]="'#'+link">Our Dumpsters</a>
-    </li> -->
+    <li class="li__nav__item menu-button" (click)="toggleMenu()">Menu</li>
   </ul>
 </nav>
-
+<app-menu *ngIf="showMenu"></app-menu>

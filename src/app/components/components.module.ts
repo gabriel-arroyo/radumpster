@@ -27,6 +27,7 @@ import { QuoteResultComponent } from './quote-result/quote-result.component';
 import { ResponsiveRowComponent } from './responsive-row/responsive-row.component';
 import { BackgroundComponent } from './background/background.component';
 import { ErrorMessageComponent } from './error-message/error-message.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { ErrorMessageComponent } from './error-message/error-message.component';
     ResponsiveRowComponent,
     BackgroundComponent,
     ErrorMessageComponent,
+    MenuComponent,
   ],
   imports: [CommonModule, RouterModule, MatDatepickerModule, MatNativeDateModule, MatFormFieldModule],
   exports: [
@@ -79,7 +81,8 @@ import { ErrorMessageComponent } from './error-message/error-message.component';
     QuoteResultComponent,
     ResponsiveRowComponent,
     BackgroundComponent,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    MenuComponent
   ],
 })
 export class ComponentsModule { }

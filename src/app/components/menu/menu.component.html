@@ -1,0 +1,9 @@
+<div class="container">
+    <ul class="nav__list">
+        <li *ngFor="let item of navitems, let i = index" class="li__nav__item">
+            <a *ngIf="item.link.charAt(0)==='#'" [href]="item.link">{{item.title}}</a>
+            <a *ngIf="item.link.charAt(0)==='/'" [routerLink]="[item.link]" class="nav__item"
+                [routerLinkActive]="['active']">{{item.title}}</a>
+        </li>
+    </ul>
+</div>

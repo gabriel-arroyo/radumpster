@@ -1,20 +1,23 @@
 .container {
     background-color: white;
     border-radius: 15px;
-    padding: 1vw 3vw 1vw 3vw;
-    display: flex;
+    padding: 1vw 5vw 1vw 5vw;
+    display: inline-flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .gradient {
+    display: inline-flex;
     background: #12468d;
     background: linear-gradient(0deg, #12468d, #7fbe13);
     padding: 5px;
     border-radius: 15px;
     width: 100%;
     align-self: center;
-    min-width: 500px;
+    margin-bottom: 40px;
+    max-width: 81%;
 }
 
 .flex {
@@ -23,8 +26,20 @@
     align-items: center;
 }
 
+
+
 @media (max-width: 600px) {
     .gradient {
-        min-width: 100px;
+        max-width: 81%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 1vw 2vw 1vw 2vw;
+    }
+
+    .gradient {
+        max-width: 77%;
     }
 }

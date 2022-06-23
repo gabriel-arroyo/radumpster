@@ -18,6 +18,7 @@
 .dumpsters {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 @media (max-width: 820px) {

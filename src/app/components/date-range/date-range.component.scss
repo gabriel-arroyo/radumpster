@@ -22,4 +22,12 @@ label {
     align-items: center;
     margin-left: 5px;
     margin-right: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .date-input {
+        font-size: small;
+        width: 90%;
+    }
 }

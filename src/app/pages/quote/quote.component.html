@@ -1,5 +1,6 @@
 <app-navbar logo="../../../assets/images/logo-lg.png"></app-navbar>
-<div class="container">
+<app-background>
+
   <app-section-title>Get a Quote</app-section-title>
   <app-form-container>
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
@@ -20,4 +21,4 @@
       <app-quote-result [available]=true [total]="20"></app-quote-result>
     </form>
   </app-form-container>
-</div>
+</app-background>

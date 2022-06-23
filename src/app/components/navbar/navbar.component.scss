@@ -9,7 +9,7 @@ $movile: 668px;
   top: 0;
   padding: 35px 16px;
   background: #ffffff;
-  // padding-right: 10%;
+  padding-right: 10%;
   border: 1px solid #cdcdcd;
   z-index: 10;
   width: 100vw;
@@ -98,9 +98,15 @@ a {
   white-space: pre;
 }
 
+.menu-button {
+  display: none !important;
+  font-weight: bold;
+}
+
 @media (max-width: 600px) {
   .nav__item {
     font-size: 9px;
+    display: none;
   }
 
   img {
@@ -110,16 +116,19 @@ a {
   }
 
   .nav {
-    height: 50px;
+    height: 40px;
     top: 0;
     padding: 5px 16px;
     padding-right: 10%;
-    width: 84%;
   }
 
   a {
     white-space: normal;
     max-width: 50px;
     white-space: pre;
+  }
+
+  .menu-button {
+    display: block !important;
   }
 }
