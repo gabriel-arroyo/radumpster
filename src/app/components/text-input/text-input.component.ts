@@ -9,6 +9,7 @@ export class TextInputComponent implements OnInit {
   @Output() input = new EventEmitter();
   @Output() change = new EventEmitter();
   @Input() label: string = "";
+  @Input() type: string = "text";
 
   constructor() { }
 
