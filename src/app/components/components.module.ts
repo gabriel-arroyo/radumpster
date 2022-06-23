@@ -28,7 +28,8 @@ import { ResponsiveRowComponent } from './responsive-row/responsive-row.componen
 import { BackgroundComponent } from './background/background.component';
 import { ErrorMessageComponent } from './error-message/error-message.component';
 import { MenuComponent } from './menu/menu.component';
-
+import { SelectInputComponent } from './select-input/select-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,8 +57,9 @@ import { MenuComponent } from './menu/menu.component';
     BackgroundComponent,
     ErrorMessageComponent,
     MenuComponent,
+    SelectInputComponent,
   ],
-  imports: [CommonModule, RouterModule, MatDatepickerModule, MatNativeDateModule, MatFormFieldModule],
+  imports: [CommonModule, RouterModule, MatDatepickerModule, MatNativeDateModule, MatFormFieldModule, FormsModule],
   exports: [
     CoverComponent,
     NavbarComponent,
@@ -82,7 +84,8 @@ import { MenuComponent } from './menu/menu.component';
     ResponsiveRowComponent,
     BackgroundComponent,
     ErrorMessageComponent,
-    MenuComponent
+    MenuComponent,
+    SelectInputComponent
   ],
 })
 export class ComponentsModule { }

@@ -10,28 +10,28 @@ export class DumpstersbarComponent implements OnInit {
   @Input() dumpsters: Dumpster[] = [
     {
       imageSrc: '../../../assets/images/5_yard_dumpster.jpg',
-      title: 'Dumpster type',
+      title: '10 Yard',
       dimensionsArray: ['line1', 'line2', 'line3'],
       bestForArray: ['line1', 'line2', 'line3'],
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'
     },
     {
       imageSrc: '../../../assets/images/10_yard_dumpster.jpg',
-      title: 'Dumpster type',
+      title: '15 Yard',
       dimensionsArray: ['line1', 'line2', 'line3'],
       bestForArray: ['line1', 'line2', 'line3'],
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'
     },
     {
       imageSrc: '../../../assets/images/20_yard_dumpster.jpg',
-      title: 'Dumpster type',
+      title: '20 Yard',
       dimensionsArray: ['line1', 'line2', 'line3'],
       bestForArray: ['line1', 'line2', 'line3'],
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'
     },
     {
       imageSrc: '../../../assets/images/30_yard_dumpster.jpg',
-      title: 'Dumpster type',
+      title: '25 Yard',
       dimensionsArray: ['line1', 'line2', 'line3'],
       bestForArray: ['line1', 'line2', 'line3'],
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'

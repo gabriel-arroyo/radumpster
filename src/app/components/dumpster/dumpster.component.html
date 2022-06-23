@@ -1,13 +1,15 @@
 <div class="whole">
   <div class="container">
-    <img class="image" src="{{dumpster.imageSrc}}" alt="dumpster"/>
+    <img class="image" src="{{dumpster.imageSrc}}" alt="dumpster" />
     <div class="text">
-      <div class="title">5 Yard Dumpster</div>
+      <div class="title">{{dumpster.title}}</div>
       <div class="subtitle">Dimensions</div>
       <div *ngFor="let dimension of dumpster.dimensionsArray" class="data">{{dimension}}</div>
       <div class="subtitle">Best for</div>
       <div *ngFor="let bestFor of dumpster.bestForArray" class="data">{{bestFor}}</div>
     </div>
   </div>
-  <img class="button" src="{{dumpster.buttonSrc}}" alt="quote"/>
+  <!-- <img class="button" src="{{dumpster.buttonSrc}}" alt="quote" /> -->
+  <app-round-button class="button" [routerLink]="['/quote',dumpster.title]" text="select dumpster" size="bg">
+  </app-round-button>
 </div>

@@ -28,15 +28,13 @@
 }
 
 .button {
-  height: 6vw;
-  width: 6vw;
-  margin-left: 37%;
-  margin-top: -20%;
+  position: relative;
+  bottom: 70px;
   -webkit-filter: drop-shadow(15px 15px 15px #222);
   filter: drop-shadow(15px 15px 15px #222);
-  cursor: pointer;
-  transition: transform 0.25s ease;
 }
+
+
 
 @media (max-width: 820px) {
   .title {

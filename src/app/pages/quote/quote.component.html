@@ -6,7 +6,8 @@
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
       <div class="form-group">
         <app-responsive-row class="margin-row1">
-          <app-text-label label="Dumpster Type:" text="20 Yard"></app-text-label>
+          <!-- <app-text-label label="Dumpster Type:" text="{{dumpsterType}}"></app-text-label> -->
+          <app-select-input [options]="dumpsters" option="{{dumpsterType}}" label="Dumpster Type:"></app-select-input>
           <app-date-range (changeStart)="onChangeStartDate($event)" (changeEnd)="onChangeEndDate($event)" label="Date:">
           </app-date-range>
         </app-responsive-row>

@@ -1,0 +1,6 @@
+<label for="dumpster" class="center">{{label}}
+    <!-- <input (change)="onChange($event)" class="text-input"> -->
+    <select name="dumpster" id="dumpster" class="text-input" [(ngModel)]="option">
+        <option *ngFor="let option of options;" [value]="option">{{option}}</option>
+    </select>
+</label>
