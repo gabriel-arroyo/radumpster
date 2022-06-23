@@ -7,7 +7,7 @@
         [routerLinkActive]="['active']">{{item.title}}</a>
 
     </li>
-    <li class="li__nav__item menu-button" (click)="toggleMenu()">Menu</li>
+    <li class="li__nav__item menu-button" (click)="toggleMenu()" (click)="$event.stopPropagation()">Menu</li>
   </ul>
 </nav>
 <app-menu *ngIf="showMenu"></app-menu>

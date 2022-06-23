@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -13,10 +13,15 @@ export class NavbarComponent implements OnInit, OnDestroy {
     { title: 'Our Dumpsters', link: '/ourdumpsters' },
     { title: 'Login', link: '/login' },
   ]
-  showMenu: boolean = true;
+  showMenu: boolean = false;
 
   constructor() { }
 
+  @HostListener('document:click', ['$event'])
+  onDocumentClick() {
+    console.log("out")
+    this.showMenu = false;
+  }
 
   ngOnInit(): void {
   }
