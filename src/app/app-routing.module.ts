@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { OurDumpstersComponent } from './pages/our-dumpsters/our-dumpsters.component';
 import { QuoteComponent } from './pages/quote/quote.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
 import { WhyusComponent } from './pages/whyus/whyus.component';
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'quote/:id', component: QuoteComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'reset', component: ResetPasswordComponent },
   { path: '**', component: HomeComponent },
 ];
 

@@ -2,13 +2,29 @@
 <app-background>
     <app-section-title class="title">Register</app-section-title>
     <app-form-container>
-        <app-text-input label="Full Name:"></app-text-input>
-        <app-text-input label="Address:"></app-text-input>
-        <app-text-input label="Phone:"></app-text-input>
-        <app-text-input label="Mail:"></app-text-input>
-        <app-text-input label="Password:"></app-text-input>
-        <app-text-input label="Repeat Password:"></app-text-input>
+        <app-responsive-row>
+            <app-text-input class="grow" label="First Name:"></app-text-input>
+            <app-text-input class="grow" label="Last Name:"></app-text-input>
+        </app-responsive-row>
+        <app-responsive-row>
+            <app-text-input class="grow" label="Address:"></app-text-input>
+            <app-text-input class="grow" label="Zip Code"></app-text-input>
+        </app-responsive-row>
+        <app-responsive-row>
+            <app-text-input class="grow" label="User:"></app-text-input>
+            <app-text-input class="grow" label="Phone:"></app-text-input>
+        </app-responsive-row>
+        <app-responsive-row>
+            <app-text-input class="grow" label="Email:"></app-text-input>
+            <app-text-input class="grow" label="Confirm Email:"></app-text-input>
+        </app-responsive-row>
+        <app-responsive-row>
+            <app-text-input class="grow" label="Password:"></app-text-input>
+            <app-text-input class="grow" label="Confirm Password:"></app-text-input>
+        </app-responsive-row>
         <app-error-message [active]="true">Passwords are not equal. Please Verify</app-error-message>
+        <app-error-message [active]="true">This email is already in use. If you have register in the past please <a
+                href="/login">Login</a></app-error-message>
         <app-button>Register</app-button>
         <p>You have already an account? Please <a href="/login">Login</a></p>
     </app-form-container>

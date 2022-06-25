@@ -5,16 +5,18 @@
   <app-form-container>
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.value)">
       <div class="form-group">
-        <app-responsive-row class="margin-row1">
-          <!-- <app-text-label label="Dumpster Type:" text="{{dumpsterType}}"></app-text-label> -->
-          <app-select-input [options]="dumpsters" option="{{dumpsterType}}" label="Dumpster Type:"></app-select-input>
-          <app-date-range (changeStart)="onChangeStartDate($event)" (changeEnd)="onChangeEndDate($event)" label="Date:">
+        <app-responsive-row>
+          <app-select-input class="grow" [options]="dumpsters" option="{{dumpsterType}}" label="Dumpster Type:">
+          </app-select-input>
+          <app-date-range class="grow" (changeStart)="onChangeStartDate($event)" (changeEnd)="onChangeEndDate($event)"
+            label="Date:">
           </app-date-range>
         </app-responsive-row>
-        <div class="row2">
-          <app-text-input class="location" label="Location:" (change)="onChange($event)" (input)="onInput($event)">
+        <app-responsive-row>
+          <app-text-input class="location grow" label="Location:" (change)="onChange($event)" (input)="onInput($event)">
           </app-text-input>
-        </div>
+          <app-text-input class="grow" label="Zip Code"></app-text-input>
+        </app-responsive-row>
       </div>
       <app-map-container>
         <img class="map" src="../../../assets/images/map.png" alt="map" />

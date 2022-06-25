@@ -1,21 +1,10 @@
-.margin-row1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+.grow {
+  flex-grow: 1;
 }
 
-.row2 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 100%;
-}
-
-.location {
-  width: 67vw;
-}
 
 .map {
-  width: 70vw;
+  width: 80vw;
   align-self: center;
 }
 
@@ -51,7 +40,7 @@ input {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .container {
     padding: 0;
     width: 100vw;
@@ -84,6 +73,11 @@ input {
     margin-bottom: 5vw;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .map {
+    width: 96vw;
+    align-self: center;
   }
 
 }

@@ -113,6 +113,26 @@ body {
   width: 100%;
 }
 
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.mat-form-field-flex {
+  display: inline-flex !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 1px !important;
+}
+
+.mat-form-field-type-mat-date-range-input .mat-form-field-infix {
+  width: 70px !important;
+}
 
 @media (max-width: 820px) {
   .mat-form-field {

@@ -1,7 +1,7 @@
 .container {
     background-color: white;
     border-radius: 15px;
-    padding: 1vw 5vw 1vw 5vw;
+    padding: 25px;
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
@@ -17,7 +17,7 @@
     width: 100%;
     align-self: center;
     margin-bottom: 40px;
-    max-width: 81%;
+    max-width: 88%;
 }
 
 .flex {
@@ -28,18 +28,12 @@
 
 
 
-@media (max-width: 600px) {
-    .gradient {
-        max-width: 81%;
-    }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 620px) {
     .container {
-        padding: 1vw 2vw 1vw 2vw;
+        padding: 0;
     }
 
     .gradient {
-        max-width: 77%;
+        max-width: 100%;
     }
 }

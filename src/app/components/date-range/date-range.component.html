@@ -1,10 +1,11 @@
-<label for="location" class="center">{{label}}
-    <mat-form-field appearance="fill" class="field">
-        <mat-date-range-input [rangePicker]="picker" class="date-input">
+<div class="container">
+    <p class="label">{{label}}</p>
+    <mat-form-field appearance="fill" class="text-input border-style">
+        <mat-date-range-input [rangePicker]="picker">
             <input matStartDate placeholder="Start date" (dateInput)="onChangeStart($event)">
             <input matEndDate placeholder="End date" (dateInput)="onChangeEnd($event)">
         </mat-date-range-input>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-date-range-picker #picker></mat-date-range-picker>
     </mat-form-field>
-</label>
+</div>

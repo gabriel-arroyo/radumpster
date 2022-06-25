@@ -1,10 +1,13 @@
-.flex {
+.row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
-    max-width: 100%;
 }
+
+.grow {
+    flex-grow: 1;
+}
+
 
 @media (max-width:820px) {
     .flex {
