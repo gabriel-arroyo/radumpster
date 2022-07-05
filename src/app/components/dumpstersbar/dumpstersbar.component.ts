@@ -11,8 +11,8 @@ export class DumpstersbarComponent implements OnInit {
     {
       imageSrc: '../../../assets/images/5_yard_dumpster.jpg',
       title: '10 Yard',
-      dimensionsArray: ['line1', 'line2', 'line3'],
-      bestForArray: ['line1', 'line2', 'line3'],
+      dimensionsArray: ['6', '12', '2'],
+      bestForArray: ['Roofing: 16 squares (1 sq.=3 packs shingles = 100 sq.feet)', 'Demolition: items that lay flat (drywall, wood, tiles, flooring, etc..)', 'Household: mattresses, clothing, garbage bags etc.'],
       buttonSrc: '../../../assets/images/btn-get-a-quote.png'
     },
     {

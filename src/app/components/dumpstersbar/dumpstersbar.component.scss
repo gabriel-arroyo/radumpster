@@ -1,8 +1,5 @@
 .container {
   margin-top: 2em;
-  padding: 2em;
-  padding-bottom: 3em;
-  padding-top: 0.1em;
   background-color: white;
 }
 
@@ -15,12 +12,6 @@
   padding: 3vw;
 }
 
-.dumpsters {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 @media (max-width: 820px) {
   .dumpsters {
     flex-direction: column;
@@ -31,4 +22,20 @@
   .title {
     font-size: 5vw;
   }
+}
+
+.dumpsters {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.dumpster {
+  width: 22vw;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
