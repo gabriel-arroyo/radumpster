@@ -1,16 +1,11 @@
 .container {
-  width: 70%;
-  background-color: #1d213e;
-  padding: 50px;
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
-
+  align-items: center;
 }
 
 .reason {
-  margin: 15px
+  margin: 15px;
 }
 
 .title {
